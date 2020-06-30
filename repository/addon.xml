@@ -256,7 +256,7 @@
 </addon>
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="1.9.6"                                                                                                                                        
+	   version="1.9.8"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -328,6 +328,33 @@
         Credits to CyberBoy_Ram for the thumbnails.</description>
     </extension>
 </addon>
+<addon id="plugin.video.formula1" name="Formula 1" version="1.0.0" provider-name="jaylinski">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.future" version="0.16.0"/>
+        <import addon="script.module.requests" version="2.4.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Videos von der Formula 1 Website</summary>
+        <summary lang="en_GB">Videos from the Formula 1 website</summary>
+        <disclaimer lang="en_GB">This plugin is not official, approved or endorsed by Formula 1.</disclaimer>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=352138</forum>
+        <website>https://www.formula1.com</website>
+        <source>https://github.com/jaylinski/kodi-addon-formula1</source>
+        <news>1.0.0 (2020-03-03)
+Initial release.
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>	
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -468,72 +495,23 @@ FYI - our content is available only in Israel.
         <description>Free internet radio. Listen to hundreds of genre stations or create your own with your favorite music.</description>
     </extension>
 </addon>
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.7" provider-name="Sbs">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.requests" version="2.9.1" />
+	<import addon="script.common.plugin.cache" version="2.5.5"/>
+    <import addon="script.subskeys" version="1.0.1"/>
+	<import addon="script.module.chardet" />
+	
+  </requires>
+  <extension point="xbmc.service" library="autosub.py" start="startup"></extension> 
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">All sites Subs Super Speed</summary>
+    <description lang="en">All sites Subs. Subcenter.wizdom,subcene,opensubtitles. Thanks to:Catz,wizdom,manacker,amet</description>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>	
 
 </addons>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
