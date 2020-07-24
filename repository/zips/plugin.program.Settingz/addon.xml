@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.Settingz"                                                                                                                                    
+	   name="מתקין ומגדיר"                                                 
+	   version="1.2.4"                                                                                                                                        
+	   provider-name="Ebs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">מתקין ומתקן</summary>
+    <description lang="he">מתקין ומתקן</description>
+    <platform>all</platform>
+  </extension>
+</addon>
