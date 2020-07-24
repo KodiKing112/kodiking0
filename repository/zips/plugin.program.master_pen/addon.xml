@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.master_pen"                                                                                                                                    
+	   name="Masten Pen"                      
+	   version="6.4.9.2"                                                                                                                                        
+	   provider-name="The Pen Team">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+
+
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="run.py">
+    <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">matster addon to update all</summary>
+    <description lang="en">matster addon to update all</description>
+    <platform>all</platform>
+
+  </extension>
+</addon>
