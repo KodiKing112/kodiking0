@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="Script.pairall.pair"
+  name="pairall pair"
+  version="1.2" 
+  provider-name="pairall pair">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">pairall Menu System</summary>
+    <description lang="en">pairall Menu System</description>
+	<disclaimer>pairall Menu System</disclaimer>
+  </extension>
+</addon>
