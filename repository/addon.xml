@@ -627,5 +627,137 @@ FYI - our content is available only in Israel.
     <platform>all</platform>
   </extension>
 </addon>	
+<addon id="plugin.video.OTV_MEDIA" name="OTV_MEDIA" version="4.6.2" provider-name="Orhan t">
+    <requires>              
+                                              
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.common.plugin.cache" version="0.9.1"/>
+	      <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.parsedom" version="2.5.2"/>
+        <import addon="script.module.simple.downloader" version="0.9.4"/>
+        <import addon="plugin.video.youtube" version="2.9.2"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="script.module.urlresolver" optional="true"/>
+        <import addon="script.module.pyamf" />
+        <import addon="script.module.metahandler"   version="1.0.0"/>
+        <import addon="script.module.routing"/> 
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+   </extension>
+  <extension point="xbmc.addon.metadata">
+    
+    <summary lang="en">OTV_MEDIA</summary>    <description lang="en">
+    [COLOR yellow]Bagis,Spenden,Donation[/COLOR]
+[COLOR yellow]https://www.paypal.me/orhantv [/COLOR]
+[COLOR red]Movies[/COLOR],
+[COLOR yellow]TV-Shovs[/COLOR],
+[COLOR turquoise]Documentaries[/COLOR],
+[COLOR limegreen]Toons[/COLOR],
+[COLOR red]Live TV[/COLOR],
++18 adult pin on this site->
+http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+  </extension>
+</addon>
+<addon id="plugin.video.romy" name="Romy Plugin Playground" version="1.2" provider-name="Four You!">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Romy Movies</summary>
+        <description lang="en">Filme doar pentru voi.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide>https://youtu.be/cJ4DVkd2_To</video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>	
+<addon id="plugin.video.tide" name="Tide" version="0.0.3" provider-name="wahed">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.beautifulsoup4" version="4.6.2"/> 
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">sport event streaming</summary>
+        <description lang="en">sport event streaming</description>
+    </extension>
+</addon>
+<addon id="script.autoruns"
+       name="Autoruns"
+       version="1.0.1"
+       provider-name="fightnight">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/> 
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+		<forum>http://forum.kodi.tv/showthread.php?tid=223015</forum>
+		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
+		<summary lang="en">Disable startup services on Kodi</summary>
+		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+    </extension>
+</addon>
+<addon	id="script.disclaimer" 
+		name="Disclaimer" 
+		version="0.0.3" 
+		provider-name="[COLOR dodgerblue][I]Barroni[/I][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="startup.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR dodgerblue]Disclaimer[/COLOR]</summary>
+    <description lang="en">Provides a disclaimer for builds.</description>
+	<disclaimer lang="en">This Program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</disclaimer>
+    <platform>all</platform>
+	<license>http://www.gnu.org/copyleft/gpl.html </license>
+	<forum>http://</forum>
+	<website>https://</website>
+	<source>https://</source>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot1.png</screenshot>
+		<screenshot>resources/screenshot2.png</screenshot>
+		<screenshot>resources/screenshot3.png</screenshot>
+	</assets>
+  </extension>
+</addon>	
 	
 </addons>
