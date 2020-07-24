@@ -200,26 +200,6 @@
   </extension>
 
 </addon>
-<addon id="plugin.video.telemedia"
-	   name="Telemedia 2.0"
-	   version="1.8.8"
-	   provider-name="Pavel Durov">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	<import addon="script.module.pyxbmct" version="1.1.4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
-    <description lang="he">Telegram media for kodi</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 <addon id="plugin.video.tivix.net" name="Tivix.net" version="2.4.0" provider-name="mrstealth, dandy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -515,5 +495,137 @@ FYI - our content is available only in Israel.
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>	
+<addon id="plugin.video.twitch" version="2.5.1" name="Twitch" provider-name="A Talented Community">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.python.twitch" version="2.0.14"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/addon_runner.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service_runner.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <news>
+[fix] encoding issue causing streams/videos/live notifications to be inaccessible with some languages
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <source>https://github.com/MrSprigster/Twitch-on-Kodi</source>
+        <license>GPL-3.0-only</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=134538</forum>
+        <summary lang="en_GB">Twitch video plugin</summary>
+        <description lang="en_GB">Watch your favorite gaming streams!</description>
+        <summary lang="da_DK">Twitch video plugin</summary>
+        <description lang="da_DK">Se dine favorit gaming streams!</description>
+        <summary lang="de_DE">Twitch video plugin</summary>
+        <description lang="de_DE">Schaue die besten Gaming-Streams!</description>
+        <summary lang="es_ES">Twitch video plugin</summary>
+        <description lang="es_ES">¡Mira los streams de tus juegos favoritos!</description>
+        <summary lang="fr_FR">Twitch video plugin</summary>
+        <description lang="fr_FR">Regardez les streams de vos jeux favoris !</description>
+        <summary lang="nl_NL">Twitch video plugin</summary>
+        <description lang="nl_NL">Bekijk je favoriete gaming-streams!</description>
+        <summary lang="nb_NO">Tillegg for Twitch</summary>
+        <description lang="nb_NO">Se dine favorittstrømmere!</description>
+        <summary lang="pl_PL">Twitch video plugin</summary>
+        <description lang="pl_PL">Oglądaj ulubione programy TwitchTV!</description>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+    </extension>
+</addon>
+<addon id="plugin.program.Settingz"                                                                                                                                    
+	   name="מתקין ומגדיר"                                                 
+	   version="1.2.4"                                                                                                                                        
+	   provider-name="Ebs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">מתקין ומתקן</summary>
+    <description lang="he">מתקין ומתקן</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="1.0.1" provider-name="Philipp Temminghoff (phil65)">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.autocompletion" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+    <extension point="xbmc.python.script"       library="default.py">
+        <provides>executable</provides>
+    </extension>
 
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">AutoCompletion for the virtual keyboard (needs skin support)</summary>
+        <description lang="en">AutoCompletion for the virtual keyboard (needs skin support)</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+        <source>https://github.com/phil65/plugin.program.autocompletion</source>
+    </extension>
+</addon>
+<addon id="plugin.program.master_pen"                                                                                                                                    
+	   name="Masten Pen"                      
+	   version="6.4.9.2"                                                                                                                                        
+	   provider-name="The Pen Team">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+
+
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="run.py">
+    <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">matster addon to update all</summary>
+    <description lang="en">matster addon to update all</description>
+    <platform>all</platform>
+
+  </extension>
+</addon>
+<addon id="plugin.close.kodi" name="[COLOR red] Force Close Kodi[/COLOR] " version="3.1.3" provider-name="Based_Skid">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Force Close Kodi</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.program.LogPopup"                                                                                                                                    
+	   name="Log popup"                                                 
+	   version="1.0.6"                                                                                                                                        
+	   provider-name="Ebs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="login"></extension>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Much better Log popup</summary>
+    <description lang="he">Much better Log popup</description>
+    <platform>all</platform>
+  </extension>
+</addon>	
+	
 </addons>
