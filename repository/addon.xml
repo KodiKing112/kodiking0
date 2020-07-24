@@ -759,5 +759,107 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
 	</assets>
   </extension>
 </addon>	
+<addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="plugin.video.idanplus" version="2.5.2"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.xmltodict"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+	<provides>video</provides>
+		<description lang="en">Final Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
+		<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
+	</extension>
+</addon>
+<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="3.3"> 
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" /> 
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup"> 
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_KCleaner.htm</website>
+    <summary lang="en_GB">Clean up temporary files in Kodi.</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Clean up temporary files in Kodi.</description>
+    <news>v3.3 [CR]
+- Small fix for prewash [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>	
+<addon id="script.program.kodicleaner"
+  name="Kodi Cleaner"
+  version="10.3" 
+  provider-name="VistaTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">kodi cleaner Deletes pyo files and thumbnails.</summary>
+    <description lang="en">kodi cleaner Deletes pyo files and thumbnails.</description>
+	<disclaimer>kodi cleaner</disclaimer>
+  </extension>
+</addon>
+<addon id="Script.pairall.pair"
+  name="pairall pair"
+  version="1.2" 
+  provider-name="pairall pair">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">pairall Menu System</summary>
+    <description lang="en">pairall Menu System</description>
+	<disclaimer>pairall Menu System</disclaimer>
+  </extension>
+</addon>
+<addon id="script.realdebrid.mod" name="RealDebrid-Mod" version="1.1.2" provider-name="ptom">
+	<requires>
+        <import addon="script.module.requests" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<description lang="en">Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</description>
+        <summary>Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</summary>
+        <news>v0.5 - added "Play using RealDebrid" to context menu</news>
+        <website>http://www.ptom.co.uk</website>
+		<platform>all</platform>
+		<language>en</language>
+		<email>ptom98@gmail.com</email>
+	</extension>
+</addon>
+	
 	
 </addons>
