@@ -385,7 +385,7 @@ Initial release.
     </news>
   </extension>
 </addon>
-<addon id="plugin.video.russianplaylis" name="Russian Playlist" version="1.0.0" provider-name="King">
+<addon id="plugin.video.playlistloader" name="Russian Playlist" version="1.0.0" provider-name="King">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.requests" version="2.9.1"/>
@@ -394,9 +394,9 @@ Initial release.
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Playlist Loader</summary>
-    <summary lang="he">Playlist Loader</summary>
-    <description lang="en">Playlist Loader</description>
+    <summary lang="en"></summary>
+    <summary lang="he"></summary>
+    <description lang="en"></description>
     <description lang="he">Playlist Loader</description>
     <platform>all</platform>
 	<news>
