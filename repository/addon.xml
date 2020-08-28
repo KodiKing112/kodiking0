@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.telemedia"
+	   name="Telemedia 2.0"
+	   version="1.8.5"
+	   provider-name="Pavel Durov">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.pyxbmct" version="1.1.4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
+    <description lang="he">Telegram media for kodi</description>
+    <platform>all</platform>
+  </extension>
+</addon>	
 <addon id="plugin.video.hidabrot"                                                                                                                                    
 	   name="הידברות"                                                 
 	   version="1.0.0"                                                                                                                                        
@@ -251,9 +271,9 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.shadow"
-	   name="Shadow"
-	   version="2.1.8"
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.1.9"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -380,26 +400,7 @@ Initial release.
             <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
-</addon>
-<addon id="plugin.video.sportshdme" name="SportHD" version="0.0.1" provider-name="Bugatsinho">
-  <requires>
-    <!--import addon="xbmc.python" version="2.1.0"/-->
-    <import addon="script.module.dateutil" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">SportHD by Bugatsinho</summary>
-    <description lang="en">Sport Streams from SportHD.me</description>
-    <disclaimer lang="en">All the streams on this add-on are hosted on the third party site and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
-	<language>EN</language>
-    <license>GNU GPL, version 2</license>
-    <twitter>https://twitter.com/Bugatsinho</twitter>
-    <news>
-    </news>
-  </extension>
-</addon>		
+</addon>	
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -732,22 +733,6 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
 </addon>	
-<addon id="plugin.video.tide" name="Tide" version="0.0.3" provider-name="wahed">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.beautifulsoup4" version="4.6.2"/> 
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">sport event streaming</summary>
-        <description lang="en">sport event streaming</description>
-    </extension>
-</addon>
 <addon id="script.autoruns"
        name="Autoruns"
        version="1.0.1"
