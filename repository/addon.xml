@@ -235,7 +235,7 @@
   </extension>
 
 </addon>
-<addon id="plugin.video.tivix.net" name="Tivix.net" version="2.4.1" provider-name="mrstealth, dandy">
+<addon id="plugin.video.tivix.net" name="Tivix.net" version="2.4.2" provider-name="mrstealth, dandy">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmc.helpers" version="2.1.0"/>
@@ -271,14 +271,11 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.shadow"                                                                                                                                    
-	   name="Shadow"                                                 
-	   version="2.1.9"                                                                                                                                        
+<addon id="plugin.video.shadow"
+	   name="Shadow"
+	   version="2.3.4"
 	   provider-name="Darkness">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.six" version="0.0.1"/>
-	<import addon="script.module.requests"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -286,8 +283,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possiable</description>
-	<disclaimer lang="en_US"> Thanks to Nixgates for parts of his code</disclaimer>
+    <description lang="en">All the media as fast as possible</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -401,32 +397,6 @@ Initial release.
         </assets>
     </extension>
 </addon>	
-<addon id="plugin.video.karaoketv"
-       name="KaraokeTV"
-       version="1.1.0"
-       provider-name="Hybrid\Blade\Donatello">
-  <requires>
- <import addon="xbmc.python" version="2.1.0"/>
- <import addon="script.module.beautifulsoup4" version="4.3.1" />
- <import addon="script.module.requests" version="2.3.0" />
- <import addon="script.module.html5lib" version="0.999.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">This plugin let you watch karaoke.</summary>
-    <description lang="en">
-    Watch karaoke.
-    For donations: https://goo.gl/5MLzGS
-	Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
-	</description>
-    <platform>all</platform>
- <language>en</language>
- <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
-  </extension>
-</addon>
-
 <addon id="plugin.audio.eco99music" name="eco99music" version="0.0.5" provider-name="Nir Elbaz, Noam Stolero">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
@@ -516,6 +486,26 @@ FYI - our content is available only in Israel.
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+    </extension>
+</addon>
+	<addon id="plugin.audio.jango"
+       name="Jango"
+       version="0.9.3"
+       provider-name="anonymous">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="script.module.requests" version="1.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>audio</provides>
+    </extension>
+	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Free Internet Radio that plays music you'll love!</summary>
+        <description>Free internet radio. Listen to hundreds of genre stations or create your own with your favorite music.</description>
     </extension>
 </addon>
 <addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.7" provider-name="Sbs">
