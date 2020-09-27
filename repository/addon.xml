@@ -297,7 +297,7 @@
 </addon>
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="2.3.4"
+	   version="2.3.7"
 	   provider-name="Darkness">
   <requires>
   </requires>
