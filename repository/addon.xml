@@ -1133,7 +1133,7 @@ FYI - our content is available only in Israel.
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
-</addon>		
+</addon>
 <addon id="service.subtitles.opensubtitles_by_opensubtitles"
        name="OpenSubtitles.org by OpenSubtitles"
        version="5.2.14"
