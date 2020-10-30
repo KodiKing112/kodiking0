@@ -1264,6 +1264,21 @@ v5.2.14 (2017-01-23)
         <description>Download and install addons for XBMC Israeli streaming repo for streaming sites</description>
         <platform>all</platform>
     </extension>
+</addon>
+<addon id="service.subtitles.ktuvit" name="Ktuvit.me" version="2.2.1" provider-name="CaTz">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.6.2"/>
+  </requires>
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Ktuvit.me</summary>
+    <description lang="en">Search and Download subtitles from ktuvit.me.</description>
+    <source>https://github.com/XBMCil/service.subtitles.ktuvit</source>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>	
 	
 </addons>
