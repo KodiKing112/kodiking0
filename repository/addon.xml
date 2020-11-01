@@ -675,6 +675,26 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
         </assets>
   </extension>
 </addon>
+<addon id="plugin.video.torrent"
+	   name="Torrentino"
+	   version="2.0"
+	   provider-name="NoName">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <!-- <extension point="xbmc.service" library="service.py" start="startup" /> -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he"></summary>
+    <description lang="he"></description>
+    <platform>all</platform>
+  </extension>
+</addon>	
 <addon id="plugin.video.twitch" version="2.5.3" name="Twitch" provider-name="anxdpanic, A Talented Community">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
