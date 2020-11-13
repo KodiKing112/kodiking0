@@ -274,27 +274,6 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="plugin.video.MyYoutube"                                                                                                                                    
-	   name="MyYoutube"                      
-	   version="1.1.5"                                                                                                                                        
-	   provider-name="Thunder">
-	   <requires>
-    <import addon="script.module.urlresolver"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he"></summary>
-    <description lang="he">Youtube player</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 <addon id="plugin.video.youtube" name="YouTube" version="7.1" provider-name="king">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
@@ -433,6 +412,30 @@
     <description lang="he">Victory :-) 2.0</description>
     <platform>all</platform>
   </extension>
+</addon>
+<addon id="plugin.video.victory_show" name="victory_show" version="1.0.0" provider-name="Victory Show">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.urllib3" version="1.22" optional="true"/>
+        <!--<import addon="repository.sdarot" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch victory_show video contents.</summary>
+        <summary lang="he"></summary>
+        <description lang="en">King</description>
+        <description lang="he">קינג</description>
+        <news>[B]Version 1.0.0[/B][CR]Changes inside addon to fit site changes.</news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+    </extension>
 </addon>	
 <addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.9" provider-name="Kodi free">
   <requires>
