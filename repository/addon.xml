@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.2" provider-name="Sdarot">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.2.1" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
         <import addon="script.module.requests" version="2.9.1"/>
         <import addon="script.module.urllib3" version="1.22" optional="true"/>
-        <import addon="repository.sdarot" />
+        <!--<import addon="repository.sdarot" />-->
     </requires>
     <extension point="xbmc.python.pluginsource" library="sdarottv.py">
         <provides>video</provides>
@@ -1168,7 +1168,7 @@ v1.0.1 (2019-08-06)
         <source>https://github.com/phil65/plugin.program.autocompletion</source>
     </extension>
 </addon>
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.9" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.0" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
