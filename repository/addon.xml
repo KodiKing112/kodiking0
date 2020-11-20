@@ -350,22 +350,6 @@
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
 </addon>		
-<addon id="plugin.video.shadow"
-	   name="Shadow"
-	   version="2.4.4a"
-	   provider-name="Darkness">
-  <requires>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possible</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 <addon id="plugin.video.vod"                                                                                                                                    
 	   name="[COLORgrey]Victory 3.0[/COLOR]"                                                 
 	   version="8.0"                                                                                                                                        
@@ -413,30 +397,6 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.victory_show" name="victory_show" version="1.0.0" provider-name="Victory Show">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.xbmcswift2" version="2.4.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.urllib3" version="1.22" optional="true"/>
-        <!--<import addon="repository.sdarot" />-->
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <minversion>31632</minversion>
-        <summary lang="en">Watch victory_show video contents.</summary>
-        <summary lang="he"></summary>
-        <description lang="en">King</description>
-        <description lang="he">קינג</description>
-        <news>[B]Version 1.0.0[/B][CR]Changes inside addon to fit site changes.</news>
-        <supportedcontent>
-        <content>tvshows</content>
-        </supportedcontent>
-    </extension>
-</addon>	
 <addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.9" provider-name="Kodi free">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -677,26 +637,6 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
             <fanart>fanart.jpg</fanart>
         </assets>
   </extension>
-</addon>
-<addon id="plugin.video.torrent"
-	   name="Torrentino"
-	   version="2.0"
-	   provider-name="NoName">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <!-- <extension point="xbmc.service" library="service.py" start="startup" /> -->
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he"></summary>
-    <description lang="he"></description>
-    <platform>all</platform>
-  </extension>
 </addon>	
 <addon id="plugin.video.twitch" version="2.5.3" name="Twitch" provider-name="anxdpanic, A Talented Community">
     <requires>
@@ -739,6 +679,22 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
         <description lang="pl_PL">Oglądaj ulubione programy TwitchTV!</description>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
+</addon>
+<addon id="plugin.video.mando"
+	   name="Mando S"
+	   version="4.0.8"
+	   provider-name="Darkness">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+    <platform>all</platform>
+  </extension>
 </addon>	
 <addon id="plugin.audio.eco99music" name="eco99music" version="0.0.5" provider-name="Nir Elbaz, Noam Stolero">
     <requires>
