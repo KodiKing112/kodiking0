@@ -913,44 +913,6 @@ FYI - our content is available only in Israel.
         </assets>
     </extension>
 </addon>
-	<addon id="plugin.audio.jango"
-       name="Jango"
-       version="0.9.3"
-       provider-name="anonymous">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.t0mm0.common" version="1.1.0"/>
-        <import addon="script.module.requests" version="1.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               	library="default.py">
-        <provides>audio</provides>
-    </extension>
-	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>Free Internet Radio that plays music you'll love!</summary>
-        <description>Free internet radio. Listen to hundreds of genre stations or create your own with your favorite music.</description>
-    </extension>
-</addon>
-<addon id="plugin.video.now_music" name="[COLOR blue]N[/COLOR]ow [COLOR red]M[/COLOR]usic"	version="2.1.8"	provider-name="Pulse Builds"> 
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="pulse.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Now Thats What I Call Music Collection</summary>
-    <description lang="en">All Content In This Addon Is Freely Available On The Internet</description>
-    <disclaimer lang="en">Please Use Genuine PULSE Addons From Genuine Sources</disclaimer>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>	
 <addon id="plugin.program.Settingz"                                                                                                                                    
 	   name="מתקין ומגדיר"                                                 
 	   version="1.2.4"                                                                                                                                        
