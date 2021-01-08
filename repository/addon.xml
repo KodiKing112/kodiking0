@@ -378,41 +378,6 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.allmoviesin"
-	   name="ויקטורי 2.0"
-	   version="7.7.6"
-	   provider-name="Forky TEAM">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Victory :-) 2.0</summary>
-    <description lang="he">Victory :-) 2.0</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.9" provider-name="Kodi free">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>he</language>
-    <summary lang="he">הרחבה תוכן, שירות ועזר.</summary>
-    <description lang="he">הרחבה משמשת לקיצורים להרחבות ישראליות.ובנוסף נותנת תוכן המוזרם דרך הרחבות יוטיוב+לייב סטרים פרו</description>
-    <disclaimer lang="en">Kodi free</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
 <addon id="plugin.video.einthusan"
        name="Einthusan"
        version="1.4.0"
@@ -682,7 +647,7 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
 </addon>
 <addon id="plugin.video.mando"
 	   name="Mando S"
-	   version="4.0.8"
+	   version="4.3.0"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -697,8 +662,8 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
   </extension>
 </addon>
 <addon id="plugin.video.mandofree"
-	   name="MandoFree"
-	   version="4.0.8"
+	   name="Mando Free"
+	   version="4.3.0"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -711,7 +676,7 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
     <description lang="en">All the media as fast as possible</description>
     <platform>all</platform>
   </extension>
-</addon>	
+</addon>
 <addon id="script.video.iptv.ottplayer"
        name="OTTPLAYER"
        version="1.1.6"
