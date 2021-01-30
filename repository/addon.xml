@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.2.1" provider-name="Sdarot">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="5.0.0" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
@@ -26,7 +26,7 @@
 </addon>	
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
-	   version="1.8.5"
+	   version="5.0.0"
 	   provider-name="Pavel Durov">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -43,7 +43,7 @@
     <description lang="he">Telegram media for kodi</description>
     <platform>all</platform>
   </extension>
-</addon>	
+</addon>
 <addon id="plugin.video.hidabrot"                                                                                                                                    
 	   name="הידברות"                                                 
 	   version="1.0.0"                                                                                                                                        
@@ -66,7 +66,7 @@
 </addon>
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
-	   version="1.5.6"
+	   version="5.0.0"
 	   provider-name="Movix">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -84,7 +84,7 @@
     <description lang="he">Movix Live</description>
     <platform>all</platform>
   </extension>
-</addon>	
+</addon>
 <addon id="plugin.video.live.streamspro"
        name="LiveStreamsPro"
        version="2.9.4"
@@ -647,7 +647,7 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
 </addon>
 <addon id="plugin.video.mando"
 	   name="Mando S"
-	   version="4.3.0"
+	   version="5.0.0"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -663,7 +663,7 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
 </addon>
 <addon id="plugin.video.mandofree"
 	   name="Mando Free"
-	   version="4.3.0"
+	   version="5.0.0"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -1260,6 +1260,75 @@ v5.2.14 (2017-01-23)
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
+</addon>
+	<addon id="plugin.video.idanplus" name="עידן+ פלוס" version="5.0.0" provider-name="Fishenzon">
+		<requires>
+			<import addon="script.module.requests"/>
+			<import addon="script.module.xmltodict"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.service" library="resources/lib/service.py" start="[login|startup]"/>
+		<extension point="xbmc.addon.metadata">
+			<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+			</assets>
+			<platform>all</platform>
+			<summary lang="en">צפיה בערוצי עידן פלוס ובתכניות מהאתרים הרשמיים.</summary>
+			<description lang="en">צפיה בערוצי עידן פלוס ובתכניות מהאתרים הרשמיים.[CR]אפשרויות שונות בהגדרות ההרחבה ובקליק ימני על פריט ברשימה.</description>
+			<news>- Fix for Kan 23 VOD. (Changes in website).[CR]- Removed Kan old radio stations. (Changes in website).[CR]- Added Kan Kids radio station.[CR]- Added Kan Kids podcasts.[CR]- Removed the option to load Kan VOD lists page by page (for slow devices).[CR]- Added an option to set how many pages to load to lists of Kan VOD. - default is 4 pages</news>
+			<supportedcontent>
+				<content>tvshows</content>
+			</supportedcontent>
+		</extension>
+	</addon>	
+<addon id="script.module.autocompletion" name="AutoCompletion library" version="5.0.0" provider-name="Philipp Temminghoff (phil65)">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Module providing some AutoCompletion functions</summary>
+        <description lang="en">Module providing some AutoCompletion functions</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+        <source>https://github.com/phil65/script.module.autocompletion</source>
+    </extension>
+</addon>
+<addon
+    id="skin.eminence.2.mod"
+    version="999.3.9.9"
+    name="Diggz Eminence"
+    provider-name="Diggz">
+    <requires>
+        <import addon="xbmc.gui" version="5.14.0"/>
+        <import addon="script.skinshortcuts" version="1.0.13"/>
+        <import addon="script.skin.helper.service" version="1.1.23"/>
+		<import addon="script.skin.helper.widgets" version="1.0.35"/>
+		<import addon="script.skin.helper.colorpicker" version="1.0.12"/>
+        <import addon="script.extendedinfo" version="5.0.0"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+        <import addon="resource.images.weatherfanart.multi" version="0.0.6"/>		
+    </requires>
+    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Diggz Eminence</summary>
+        <description lang="en">Eminence is a skin that aims to be clean, clear, simple and modern.</description>
+        <description lang="fr">Eminence est un thème qui vise à être clair, simple et moderne.</description>
+		<assets>
+		 	<icon>icon.png</icon>
+ 			<fanart>fanart.jpg</fanart>
+		</assets>	
+		<news> 
+		</news>
+	</extension>
 </addon>	
 	
 </addons>
