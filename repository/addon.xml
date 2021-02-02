@@ -1329,6 +1329,22 @@ v5.2.14 (2017-01-23)
 		<news> 
 		</news>
 	</extension>
+</addon>
+<addon id="repository.kingaddons"
+       name="King Addons"
+       version="5.0.0"
+       provider-name="King">
+    <extension point="xbmc.addon.repository" name="King repository">
+        <info compressed="false"></info>
+        <checksum></checksum>
+        <datadir zip="true"></datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Fuck You Kodi Free</summary>
+        <description>Fuck You Kodi Free</description>
+        <disclaimer>Fuck You Kodi Free</disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>	
 	
 </addons>
